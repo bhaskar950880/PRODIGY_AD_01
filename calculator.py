@@ -16,7 +16,7 @@ def button_equal():
         entry_var.set(result)
     except:
         entry_var.set("Error")
-
+#bhaskar
 # Main window
 root = tk.Tk()
 root.title("Galaxy Calculator")
@@ -44,11 +44,18 @@ buttons = [
     ('1', 4, 0, lambda: button_click('1')), ('2', 4, 1, lambda: button_click('2')), ('3', 4, 2, lambda: button_click('3')), ('.', 4, 3, lambda: button_click('.')),
     ('0', 5, 0, lambda: button_click('0')),
 ]
+#bhaskar 
+
+
 
 # Create all buttons
 for (text, row, col, command) in buttons:
     colspan = 4 if text == '0' else 1
     create_button(text, row, col, command, colspan)
 
+
+
+
+#bhaskar
 # Start the app
 root.mainloop()
